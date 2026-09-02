@@ -1,0 +1,245 @@
+.app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 2rem;
+  color: #f9fafb;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  letter-spacing: -0.03em;
+}
+
+.brand-pill {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  color: #e5e7eb;
+  background: radial-gradient(circle at top left, #22c55e44, #0b1120);
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 42rem;
+  font-size: 0.98rem;
+  color: #9ca3af;
+}
+
+.highlight {
+  color: #4ade80;
+  font-weight: 500;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
+  gap: 1.5rem;
+}
+
+.panel {
+  background: radial-gradient(circle at top left, #1f2937, #020617 70%);
+  border-radius: 1.25rem;
+  border: 1px solid rgba(31, 41, 55, 0.9);
+  padding: 1.25rem 1.25rem 1.4rem;
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.8),
+    0 0 0 1px rgba(15, 23, 42, 0.9);
+}
+
+.panel-wide {
+  grid-column: 1 / -1;
+  margin-top: 0.35rem;
+}
+
+.panel-title {
+  margin: 0 0 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #9ca3af;
+}
+
+.upload-dropzone {
+  margin-top: 0.75rem;
+}
+
+.prompt-input {
+  width: 100%;
+  resize: vertical;
+  min-height: 120px;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  background: radial-gradient(circle at top left, #020617, #020617 75%);
+  padding: 0.75rem 0.9rem;
+  color: #e5e7eb;
+  font: inherit;
+}
+
+.prompt-input::placeholder {
+  color: #6b7280;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.control-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #6b7280;
+}
+
+.style-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  border-radius: 999px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.8rem;
+  background-color: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  color: #e5e7eb;
+}
+
+.chip-active {
+  background: radial-gradient(circle at top left, #22c55e, #16a34a);
+  color: #022c22;
+  border-color: transparent;
+}
+
+.control-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 120px;
+}
+
+.field select,
+.field input[type='number'] {
+  border-radius: 999px;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  background-color: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.seed-row {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.primary {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border-color: transparent;
+  color: #022c22;
+}
+
+.primary:hover {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+}
+
+.hint {
+  margin-top: 0.85rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.message {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.error {
+  color: #fecaca;
+}
+
+.result-card {
+  margin-top: 0.5rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(55, 65, 81, 0.8);
+  background: radial-gradient(circle at top left, #020617, #020617 70%);
+  padding: 0.75rem;
+  display: inline-flex;
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.grid-item {
+  margin: 0;
+}
+
+.result-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.6rem;
+  display: block;
+}
+
+.footer {
+  margin-top: 1.75rem;
+  font-size: 0.8rem;
+  color: #4b5563;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
